@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>คู่มือการใช้ ChatGPT เพื่อการเรียนรู้</title>
+
+  <style>
+    :root {
+      --bg-dark: #0b132b;
+      --bg-light: #f4f7ff;
+      --card-dark: rgba(255,255,255,0.08);
+      --card-light: rgba(255,255,255,0.7);
+      --text-dark: #ffffff;
+      --text-light: #0b132b;
+      --accent: #4f7cff;
+      --blur: blur(14px);
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-dark);
+      transition: 0.3s;
+    }
+
+    body.light {
+      background: var(--bg-light);
+      color: var(--text-light);
+    }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #4f7cff, #6a5cff);
+      color: white;
+    }
+
+    .toggle {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      padding: 10px 16px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      background: rgba(255,255,255,0.25);
+      backdrop-filter: var(--blur);
+      color: white;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 16px;
+    }
+
+    .card {
+      background: var(--card-dark);
+      backdrop-filter: var(--blur);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 20px;
+      transition: 0.3s;
+    }
+
+    body.light .card {
+      background: var(--card-light);
+    }
+
+    h2 {
+      color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="toggle" onclick="toggleTheme()">🌙 / ☀️</button>
+
+  <header>
+    <h1>คู่มือการใช้ ChatGPT เพื่อการเรียนรู้</h1>
+    <p>เว็บไซต์ตัวอย่างเพื่อการเรียนรู้อย่างมีประสิทธิภาพ</p>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>📘 ChatGPT คืออะไร</h2>
+      <p>ChatGPT คือ AI ที่ช่วยตอบคำถาม อธิบายบทเรียน สรุปเนื้อหา และช่วยคิดวิเคราะห์ในการเรียนรู้</p>
+    </div>
+
+    <div class="card">
+      <h2>🧠 ใช้ ChatGPT อย่างไรให้ได้ผล</h2>
+      <ul>
+        <li>ถามคำถามให้ชัดเจน</li>
+        <li>ขอให้ยกตัวอย่าง</li>
+        <li>ให้ช่วยสรุปเป็นขั้นตอน</li>
+        <li>ใช้ตรวจคำตอบ ไม่ใช่ลอกอย่างเดียว</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🎯 ประโยชน์ต่อการเรียน</h2>
+      <p>ช่วยประหยัดเวลา เข้าใจบทเรียนเร็วขึ้น และฝึกการคิดวิเคราะห์ด้วยตนเอง</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 | AI Learning with ChatGPT
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("light");
+    }
+  </script>
+</body>
+</html>
